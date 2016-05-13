@@ -1,0 +1,56 @@
+body {
+	background-color: beige;
+	
+}
+
+h1 {
+	text-align: center;
+}
+
+img {
+	/*float:righ0;*/
+	margin-left: 680px;
+	height: 200px;
+	width:250px;
+	margin-bottom: 80px;
+}
+
+
+
+#showburgers {
+	text-align: center;
+	margin-top: 40px;
+	background-color: gray;
+	font-size: 20px;
+	height:40px;
+	width:250px;
+	margin-left: 100px;
+
+
+}
+
+#devouredburgers {
+	
+	text-align: center;
+	margin-top: 40px;
+	background-color: gray;
+	font-size: 20px;
+	height:40px;
+	width:250px;
+	margin-left: 1000px;
+
+
+}
+
+#devour {
+	
+	margin-left: 100px;
+	margin-bottom: 30px;
+}
+
+#textzone {
+	margin-left: 500px;
+	margin-bottom: 200px;
+}
+
+

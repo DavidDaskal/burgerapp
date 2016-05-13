@@ -1,0 +1,44 @@
+<h1> Eat Da Burger!</h1>
+
+<img src = "https://www.storyshelter.com/files/answer_question_image/thumb_story_detail/1409233503@keep-calm-and-eat-a-burger-16.png">
+
+
+{{#each burgers}}
+	{{#unless this.devoured}}
+<p id = 'showburgers'>{{this.burger_name}}</p>
+
+<form action="burgers/devoured/{{this.id}}?_method=PUT" method="POST">
+
+         <input type="hidden" name="devouring" value="true">
+         <button type="submit" id = 'devour'>Devour it!</button>
+</form>
+
+	{{/unless}}
+{{/each}}
+
+{{#each burgers}}
+	{{#if this.devoured}}
+	
+<p id = 'devouredburgers'>{{this.burger_name}}</p>
+
+	{{/if}}
+{{/each}}
+<br>
+
+<form action = 'burgers/add' method = 'POST' id='textzone'>
+
+<textarea rows = '6' cols = '70' name='burgername' placeholder="Enter Name of New Burger"></textarea>
+<br>
+<button type = 'submit'>Submit</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
